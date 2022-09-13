@@ -1,3 +1,3 @@
 #git submodule update --init
-git pull || echo &
+git pull &
 npm start
