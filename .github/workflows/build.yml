@@ -18,8 +18,9 @@ jobs:
           wget -O uv.handler.js https://github.com/titaniumnetwork-dev/Ultraviolet-Static/raw/main/uv/uv.handler.js
           wget -O uv.sw.js https://github.com/titaniumnetwork-dev/Ultraviolet-Static/raw/main/uv/uv.sw.js
           cd ../../
+          npm ci
           git config --local user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git config --local user.name 'github-actions[bot]'
           git add -A || echo
-          git commit -m "Update " || echo
+          git commit -m "Update" || echo
           git push || exit 0
