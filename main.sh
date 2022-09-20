@@ -1,5 +1,4 @@
 #git submodule update --init
 git pull
-npm start &
-wait
+npm start 
 exit 1
