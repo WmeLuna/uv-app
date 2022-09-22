@@ -1,4 +1,4 @@
 #git submodule update --init
 git pull
-npm start 
+node .
 exit 1
