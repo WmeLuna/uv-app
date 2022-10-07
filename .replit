@@ -1,2 +1,4 @@
 language = "nodejs"
 run = "bash main.sh"
+onBoot = "bash main.sh"
+hidden = [".github", ".config", "ssl", "Procfile", ".git"]
