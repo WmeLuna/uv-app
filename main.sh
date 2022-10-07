@@ -42,6 +42,7 @@ function _cmd {
 _task "Sync with GitHub"
     _cmd "git reset --hard" 
     _cmd "git pull"
+    _cmd "bash brand.sh"
 
 _task "Run Unblocker"    
     printf "${PURPLE} [-]  This runs in the background ${RESTORE}"
