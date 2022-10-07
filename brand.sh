@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-[ -z "$UNLOCK" ] && sed -i 's/<a href.*/<a href>This is a self hosted instance<\/a>/' ./static/index.html
+[ -z "$UNLOCK" ] && sed -i 's/<a href.*/<a>This is a self hosted instance<\/a>/' ./static/index.html
