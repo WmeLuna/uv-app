@@ -14,9 +14,9 @@ jobs:
       - name: Update core scripts
         run: |
           cd static/uv/
-          wget -O uv.bundle.js https://github.com/titaniumnetwork-dev/Ultraviolet-Static/raw/main/uv/uv.bundle.js
-          wget -O uv.handler.js https://github.com/titaniumnetwork-dev/Ultraviolet-Static/raw/main/uv/uv.handler.js
-          wget -O uv.sw.js https://github.com/titaniumnetwork-dev/Ultraviolet-Static/raw/main/uv/uv.sw.js
+          wget -O uv.bundle.js https://github.com/titaniumnetwork-dev/Ultraviolet-Static/raw/main/uv/uv.bundle.js -nv
+          wget -O uv.handler.js https://github.com/titaniumnetwork-dev/Ultraviolet-Static/raw/main/uv/uv.handler.js -nv
+          wget -O uv.sw.js https://github.com/titaniumnetwork-dev/Ultraviolet-Static/raw/main/uv/uv.sw.js -nv
           cd ../../
           npm ci
           git config --local user.email '41898282+github-actions[bot]@users.noreply.github.com'
