@@ -29,9 +29,8 @@ function _task {
 
 function _cmd {
     if eval "$1" 1> /dev/null 2> /dev/null; then
-        return 0 # success
+        return 0 
     fi
-    # read error from log and add spacing
     printf "${OVERWRITE}${LRED} [X]  ${TASK}${LRED}\n"
     while read line; do 
         printf "      ${line}\n"
