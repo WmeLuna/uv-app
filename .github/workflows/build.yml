@@ -1,0 +1,15 @@
+name: Runner
+
+on:
+  push:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * *"
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Curl Unblocker 
+        #usually turns it on when down
+        run: curl --head https://unlock.wmeluna.com/
