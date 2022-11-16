@@ -188,7 +188,7 @@ class UVServiceWorker extends EventEmitter {
             });
 
         } catch(err) {
-            return new Response(err.toString(), {
+            return new Response("Unblocker is down\n Service Worker error:\n" + err.toString(), {
                 status: 500,
             });
         };
