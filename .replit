@@ -53,8 +53,8 @@ type = "pwa-node"
 language = "nodejs"
 
 [packager.features]
-packageSearch = true
-guessImports = true
+packageSearch = false
+guessImports = false
 enabledForHosting = false
 
 [interpreter]
