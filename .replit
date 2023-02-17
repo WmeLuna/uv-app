@@ -1,6 +1,7 @@
 language = "nodejs"
 run = "bash main.sh"
 hidden = [".github", ".config", "ssl", "Procfile", ".git"]
+onBoot = "git reset --hard"
 entrypoint = "index.js"
 
 [languages]
